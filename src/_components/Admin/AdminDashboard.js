@@ -163,7 +163,7 @@ function AdminDashboard() {
             name="id"
             rules={[{ required: true, message: "Please input your product!" }]}
           >
-            <Input />
+            <Input disabled={true} />
           </Form.Item>
           <Form.Item
             label="Product"
