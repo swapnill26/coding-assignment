@@ -143,10 +143,10 @@ function AdminDashboard() {
       </Button>
       <Table dataSource={dataSource} columns={columns} />
       <Modal
-        title="Basic Modal"
+        title="Add Item"
         visible={isModalVisible}
-        onOk={handleOk}
         onCancel={handleCancel}
+        footer={null}
       >
         <Form
           name="basic"
@@ -155,7 +155,6 @@ function AdminDashboard() {
           wrapperCol={{ span: 16 }}
           initialValues={{ remember: true }}
           onFinish={onFinish}
-          //   onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
           <Form.Item
